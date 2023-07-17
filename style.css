@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+#activelink{
+   color: #FFC100 !important;
+}
+
+.my_container{
+    width: 90% !important;
+    margin: auto;
+}
+
+
+nav .navbar-toggler{
+   border-color: #FFC100;
+   border-width: 4px;
+}
+
+nav .navbar-toggler-icon{
+   color: red;
+   background-color: blue;
+}
+
+
+.navbar-nav li{
+    padding: 20px;
+}
+
+.navbar-nav li a{
+    font-size: 20px;
+    color: #1D18CE;
+    font-weight: bold;
+}
+
+.navbar-nav li a:hover{
+    color: #FFC100;
+    transition: .3s;
+}
+
+#homeshowcase{
+    margin: 70px auto;
+}
+
+#homeshowcase .row h1{
+    font-size: 70px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+#homeshowcase .row button{
+    background-color: #FF035F;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 28px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px; 
+    margin-top: 20px;
+}
+
+
+#homeslider{
+    margin-top: 100px;
+}
+
+#homeslider .carousel-caption{
+    top: 60%;
+transform: translateY(-50%);
+}
+
+#homeslider .carousel-caption h5{
+   font-size: 40px;
+   font-weight: bolder;
+   letter-spacing: 14px;
+   padding: 15px;
+}
+
+#homeslider .carousel-caption button{
+    background-color: #FF035F;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 28px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px; 
+ }
+
+ #hometeam{
+    margin: 50px auto;
+ }
+
+ #hometeam h3{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 60px;
+ }
+
+ #hometeam button{
+    background-color: #FF035F;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 28px;
+    color: white;
+    border-radius: 5px; 
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ }
+
+ #homeorg{
+    margin-top: 150px;
+ }
+
+#homeorg .textz{
+    text-align: right;
+}
+
+ #homeorg h3{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+
+ #homeorg button{
+    background-color: #FF035F;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 28px;
+    color: white;
+    border-radius: 5px; 
+    margin-top: 15px;
+    margin-left: -150px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ }
+
+ #getintouch{
+    margin-top: 80px;
+    background-color: #FFC100;
+    padding: 60px;
+ }
+
+ #getintouch .col-lg-5 h6{
+    font-weight: bold;
+ }
+
+ #getintouch .col-lg-5 h5{
+    font-weight: bold;
+    font-size: 30px;
+ }
+
+ #getintouch .col-lg-5 a{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+
+ footer{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+ }
+
+ footer span{
+    padding: 17px;
+ }
+
+ 
+
+
+
+
+ #blogshowcase h1{
+   font-size: 80px;
+   font-weight: bold;
+   padding: 50px;
+ }
+
+ #blogposts button{
+   background-color: #FF035F;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 28px;
+    color: white;
+    border-radius: 5px; 
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ }
+
+ #blogposts .row .col-lg-4{
+   margin-bottom: 30px;
+   margin-top: 30px;
+ }
+
+ #blogposts .row .col-lg-4 .imgwrap img{
+   height: 350px;
+   width: 500px;
+ }
+
+
+
+
+
+ #blogcontent h1{
+   font-size: 80px;
+   padding: 20px;
+   font-weight: bold;
+ }
+
+ #blogcontent .blogtext p{
+   font-size: 20px;
+   padding: 20px;
+   text-align: justify;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #productshowcase{
+   margin-bottom: 80px;
+ }
+
+
+ #productshowcase h1{
+   font-size: 80px;
+   font-weight: bold;
+   padding: 50px;
+   text-align: center;
+ }
+
+ #osunstartupconf h1{
+   font-weight: bolder;
+   font-size: 50px;
+ }
+
+ #osunstartupconf p{
+   font-size: 20px;
+ }
+
+ #osunstartupconf .col-lg-4, .col-lg-8{
+   margin-bottom: 60px;
+ }
+
+ #osunstartupconf button{
+   background-color: #FF035F;
+   outline: none;
+   border: none;
+   font-size: 18px;
+   padding: 12px 28px;
+   color: white;
+   border-radius: 5px; 
+   margin-top: 8px;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ }
+
+
+
+
+ #startupshowcase{
+   margin-bottom: 80px;
+ }
+
+
+ #startupshowcase h1{
+   font-size: 80px;
+   font-weight: bold;
+   padding: 50px;
+   text-align: center;
+ }
+
+ .startupshowcasetext{
+   margin-bottom: 50px;
+ }
+
+ .startupshowcasetext p{
+   font-size: 23px;
+   font-weight: bold;
+   text-align: justify;
+   padding: 15px;
+ }
+
+
+ #startupmain p{
+   font-size: 21px;
+ }
+
+ #startupmain .col-lg-6{
+   margin-bottom: 20px;
+ }
+
+
+
+
+
+
+
+ #aboutshowcase{
+   margin-bottom: 80px;
+ }
+
+
+ #aboutshowcase h1{
+   font-size: 80px;
+   font-weight: bold;
+   padding: 50px;
+   text-align: left;
+ }
+
+
+
+
+
+ .abouttext{
+   margin-bottom: 20px;
+ }
+
+
+ .abouttext p{
+   font-size: 21px;
+ }
+
+
+ .abouttext span{
+   font-weight: bold;
+ }
+
+ #aboutmain{
+   margin-top: 60px;
+ }
+
+ #aboutmain .aboutvision{
+   border: 16px solid #FABD01;
+   border-radius: 20px;
+   padding: 30px;
+ }
+
+ #aboutmain .aboutvision h5{
+   font-weight: bold;
+   text-align: center;
+   margin: 30px;
+ }
+
+ #aboutmain .aboutvision p{
+   text-align: justify;
+ }
+
+ #aboutmain .col-lg-2 h5{
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 28px;
+ }
+
+ #aboutmain .col-lg-2 p{
+   font-size: 18px;
+   text-align: left;
+ }
+
+ #aboutmain .col-lg-2 h5{
+   text-align: center;
+ }
+
+ #aboutmain  .col-lg-4 h6{
+   font-weight: bold;
+   margin: 0;
+ }
+
+ #aboutmain  .col-lg-4 img{
+   border-radius: 10px;
+   margin-bottom: 10px;
+ }
+
+
+ #aboutmain  .col-lg-2 .aboutlogopic{
+   height: 250px;
+   width: 1500px;
+ }
+
+ #aboutmain  .col-lg-8 .row{
+   margin-bottom: 30px;
+  
+ }
+
+ #aboutmain  .col-lg-4 button{
+   background-color: #FF035F;
+   outline: none;
+   border: none;
+   font-size: 18px;
+   padding: 8px 28px;
+   color: white;
+   border-radius: 5px;
+   margin-top: 30px;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 730px) {
+   #homeshowcase{
+      margin: 10px auto;
+  }
+
+
+   #homeshowcase .row h1{
+      font-size: 50px;
+      padding-top: 10px;
+  }
+
+  #homeshowcase .row img{
+      margin-left: 0px;
+      width: 400px;
+      height: 270px;
+      margin-top: 50px;
+}
+
+
+
+   #homeslider .carousel-caption{
+      display: none;
+}
+
+   #homeslider .carousel-inner img{
+      width: 500px !important;
+   }
+
+   #hometeam{
+      margin: 10px auto !important;
+   }
+
+   #hometeam h3{
+      font-size: 30px;
+      margin-top: 60px;
+   }
+   
+
+   #hometeam .row img{
+      width: 400px;
+      margin-top: 50px;
+   }
+
+   #homeorg h3{
+      font-size: 30px;
+      margin-top: 0px;
+   }
+   
+
+   #homeorg .row img{
+      width: 400px;
+      margin: 30px auto;
+   }
+
+   #homeorg{
+      margin-top: 50px;
+   }
+
+
+
+
+
+
+   #aboutmain  .col-lg-2 .aboutlogopic{
+      display: none;
+    }
+
+
+
+
+
+    #productshowcase h1{
+      font-size: 60px;
+      padding: 50px;
+    }
+
+
+
+
+
+
+    #startupshowcase h1{
+      font-size: 60px;
+      padding: 50px;
+    }
+
+
+
+
+
+    #aboutshowcase h1{
+      font-size: 60px;
+      padding: 50px;
+    }
+   
+
+
+
+   #getintouch{
+      padding: 30px !important;
+   }
+
+
+   #getintouch .row iframe{
+      width: 420px;
+      height: 270px;
+      margin-bottom: 15px;
+   }
+
+
+
+
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 393px) {
+
+   #blogshowcase h1{
+      font-size: 60px;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #blogposts button{
+       font-size: 18px;
+       padding: 10px 20px;
+     }
+
+
+
+     
+    #productshowcase h1{
+      font-size: 40px;
+      text-align: center;
+      padding: 35px;
+    }
+
+    #osunstartupconf p{
+      font-size: 18px;
+    }
+
+    #osunstartupconf h1{
+      font-weight: bold;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+
+    #osunstartupconf .col-lg-4, .col-lg-8{
+      margin-bottom: 20px;
+    }
+
+
+
+    #startupshowcase h1{
+      font-size: 40px;
+      padding: 30px;
+    }
+
+
+    .startupshowcasetext p{
+      font-size: 20px;
+    }
+
+    #startupmain p{
+      font-size: 18px;
+      text-align: justify;
+    }
+   
+
+    #aboutshowcase h1{
+      font-size: 40px;
+      padding: 30px;
+      text-align: center;
+    }
+   
+
+    .abouttext p{
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    #aboutmain .firstsecabout{
+      margin-bottom: 20px;
+    }
+
+
+    #aboutmain .col-lg-2 h5{
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0;
+    }
+   
+    #aboutmain .col-lg-2 p{
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #hometeam h3{
+      font-size: 35px;
+      font-weight: bold;
+      margin-top: 40px;
+   }
+
+   #homeorg h3{
+      font-size: 35px;
+   }
+
+
+
+
+   #getintouch{
+      padding: 20px !important;
+   }
+
+
+   #getintouch .row iframe{
+      width: 320px;
+      height: 220px;
+   }
+
+   footer{
+      font-size: 20px;
+      padding: 30px;
+   }
+
+   footer span{
+      padding: 12px;
+   }
+ }
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 320px) {
+
+   #homeshowcase .row h1{
+      font-size: 40px;
+  }
+
+   #blogshowcase h1{
+      font-size: 60px;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #blogposts button{
+       font-size: 18px;
+       padding: 10px 20px;
+     }
+
+
+
+     
+    #productshowcase h1{
+      font-size: 25px;
+      text-align: center;
+      padding: 35px;
+    }
+
+
+    #osunstartupconf h1{
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 20px;
+    }
+
+
+    #startupshowcase h1{
+      font-size: 25px;
+      padding: 30px;
+    }
+   
+
+    #aboutshowcase h1{
+      font-size: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+   
+
+    #hometeam h3{
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 40px;
+   }
+
+   #homeorg h3{
+      font-size: 25px;
+   }
+ }
