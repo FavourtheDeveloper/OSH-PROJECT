@@ -163,6 +163,11 @@ transform: translateY(-50%);
     font-weight: bold;
  }
 
+ 
+   #getintouch .row iframe{
+      width: 600px;
+      height: 380px;
+   }
 
  footer{
     background-color: black;
@@ -697,6 +702,15 @@ transform: translateY(-50%);
      }
 
 
+     #blogcontent h1{
+      font-size: 40px;
+      padding: 20px;
+    }
+
+ #blogcontent .blogtext p{
+   font-size: 20px;
+   padding: 10px;
+ }
 
      
     #productshowcase h1{
