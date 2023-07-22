@@ -436,6 +436,38 @@ transform: translateY(-50%);
   font-weight: bold;
  }
 
+#ticket .container{
+  padding: 30px;
+  border-radius: 20px;
+  
+  border: 2px solid #FFC100;
+}
+
+ #ticket{
+  margin: 200px auto;
+  
+ }
+
+ #ticket img{
+  text-align: right;
+  margin-left: 100px;
+ }
+
+ #ticket .ftext{
+  text-align: left;
+ }
+
+ #ticket .col-sm-1{
+  border-right: 5px solid #FFC100;
+ }
+
+ #ticket input{
+  border: none !important;
+  border-bottom: 2px solid  black !important;
+  background: none !important;
+  margin-bottom: 15px;
+ }
+
 
 
 
