@@ -1,4 +1,4 @@
-fetch("http://localhost:8000/")
+fetch("https://osunstartuphubapi.pythonanywhere.com/api/")
     .then(response => {
         if (response.status >= 200 && response.status < 300) {
             return response.json();
@@ -21,7 +21,7 @@ function updateContainerText(container, text) {
 
 function updateContainerImage(container, image) {
     if (container) {
-        container.innerHTML = `<img src="http://localhost:8000${image}" alt="OSH Team icon" class="img-responsive img-fluid">`;
+        container.innerHTML = `<img src="https://osunstartuphubapi.pythonanywhere.com${image}" alt="OSH Team icon" class="img-responsive img-fluid">`;
     }
 }
 
@@ -39,7 +39,7 @@ function updateCarousel(carouselData) {
 function formatCarouselItem(item, isActive) {
     return `
     <div class="carousel-item ${isActive ? 'active' : ''}">
-      <img class="d-block w-100 h-10" src="http://localhost:8000${item.file}" alt="OSSH Carousel Image">
+      <img class="d-block w-100 h-10" src="https://osunstartuphubapi.pythonanywhere.com${item.file}" alt="OSSH Carousel Image">
       <div class="carousel-caption d-md-block">
         <h5>${item.text}</h5>
         <button>Join Now</button>
