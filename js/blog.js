@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     blogPostContainer.addEventListener('click', handleSinglePostClick);
 
-    fetch('http://localhost:8000/blog/', {
+    fetch('https://osunstartuphubapi.pythonanywhere.com/api/blog/', {
         method: 'GET',
         headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
     })

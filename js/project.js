@@ -15,7 +15,7 @@ function handleCommonError(error) {
 }
 
 // Fetch and set project banner image
-fetch('http://localhost:8000/projects/page-banner/')
+fetch('https://osunstartuphub.com.ng/api/projects/page-banner/')
     .then(response => {
         if (response.status >= 200 && response.status < 300) {
             return response.json();
@@ -23,12 +23,12 @@ fetch('http://localhost:8000/projects/page-banner/')
         return Promise.reject(new Error(response.statusText));
     })
     .then(result => {
-        document.getElementById("project-banner-image").src = `http://localhost:8000${result.image}`;
+        document.getElementById("project-banner-image").src = `https://osunstartuphub.com.ng${result.image}`;
     })
     .catch(handleCommonError);
 
 // Fetch and format project data
-fetch('http://localhost:8000/projects/')
+fetch('https://osunstartuphub.com.ng/projects/')
     .then(response => {
         if (response.status >= 200 && response.status < 300) {
             return response.json();
