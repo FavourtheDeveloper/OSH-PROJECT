@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const ticketLinkButton = document.getElementById("ticket-link-button");
 
-    fetch(`http://localhost:8000/events/confirm/${uidValue}/${eidValue}/`)
+    fetch(`https://osunstartuphubapi.pythonanywhere.com/api/events/confirm/${uidValue}/${eidValue}/`)
         .then(response => {
             if (response.status >= 200 && response.status < 300) {
                 return response.json(); // Parse response body as JSON

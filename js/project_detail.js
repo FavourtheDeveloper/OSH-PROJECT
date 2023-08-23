@@ -5,7 +5,7 @@ const projectTextContainer = document.getElementById('project-text-container');
 const singleProjectId = localStorage.getItem("single-project-id");
 
 if (singleProjectId !== null) {
-    const projectDetailUrl = `http://localhost:8000/projects/detail/${singleProjectId}/`;
+    const projectDetailUrl = `https://osunstartuphubapi.pythonanywhere.com/api/projects/detail/${singleProjectId}/`;
 
     fetch(projectDetailUrl)
         .then(response => {

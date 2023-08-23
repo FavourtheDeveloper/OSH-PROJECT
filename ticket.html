@@ -76,7 +76,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <script>
         var ticketId = localStorage.getItem("ticket-id")
-        fetch(`http://localhost:8000/events/register/detail/${ticketId}/`)
+        fetch(`https://osunstartuphubapi.pythonanywhere.com/api/events/register/detail/${ticketId}/`)
             .then(response => {
                 // network failure, request prevented
                 if (response.status >= 200 && response.status < 300) {
@@ -89,8 +89,8 @@
                 console.log(result)
                 document.getElementById("full_name").innerHTML = `<span class="font-weight-light">Name: </span>${result.full_name}`;
                 document.getElementById("event-title").innerHTML = `${result.event.title}`;
-                document.getElementById("event-image").src = `http://localhost:8000${result.event.image}`;
-                document.getElementById("qr-code").src = `http://localhost:8000${result.qr_code}`;
+                document.getElementById("event-image").src = `https://osunstartuphubapi.pythonanywhere.com${result.event.image}`;
+                document.getElementById("qr-code").src = `https://osunstartuphubapi.pythonanywhere.com${result.qr_code}`;
                 document.getElementById("reg-time").innerHTML = `<span class="font-weight-light">Registered: </span>${result.created_at}`;
                 document.getElementById("start-time").innerHTML = `<span class="font-weight-light">Starts At: </span>${result.event.start_time}`;
                 document.getElementById("end-time").innerHTML = `<span class="font-weight-light">Ends At: </span>${result.event.end_time}`;

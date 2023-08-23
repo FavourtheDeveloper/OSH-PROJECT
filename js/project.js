@@ -15,7 +15,7 @@ function handleCommonError(error) {
 }
 
 // Fetch and set project banner image
-fetch('https://osunstartuphub.com.ng/api/projects/page-banner/')
+fetch('https://osunstartuphubapi.pythonanywhere.com/api/projects/page-banner/')
     .then(response => {
         if (response.status >= 200 && response.status < 300) {
             return response.json();
@@ -23,12 +23,12 @@ fetch('https://osunstartuphub.com.ng/api/projects/page-banner/')
         return Promise.reject(new Error(response.statusText));
     })
     .then(result => {
-        document.getElementById("project-banner-image").src = `https://osunstartuphub.com.ng${result.image}`;
+        document.getElementById("project-banner-image").src = `https://osunstartuphubapi.pythonanywhere.com${result.image}`;
     })
     .catch(handleCommonError);
 
 // Fetch and format project data
-fetch('https://osunstartuphub.com.ng/projects/')
+fetch('https://osunstartuphubapi.pythonanywhere.com/api/projects/')
     .then(response => {
         if (response.status >= 200 && response.status < 300) {
             return response.json();

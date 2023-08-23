@@ -34,7 +34,7 @@ function handleEventCardClick(e) {
 eventContainer.addEventListener('click', handleEventCardClick);
 
 // Fetch and display events
-fetch('http://localhost:8000/events/', {
+fetch('https://osunstartuphubapi.pythonanywhere.com/api/events/', {
     method: 'GET',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
 })

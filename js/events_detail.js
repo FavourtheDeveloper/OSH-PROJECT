@@ -17,7 +17,7 @@ async function fetchData(url) {
 const eventId = localStorage.getItem('event-id')
 
 async function updatePageContent() {
-    const url = `http://localhost:8000/events/detail/${eventId}/`;
+    const url = `https://osunstartuphubapi.pythonanywhere.com/api/events/detail/${eventId}/`;
     const result = await fetchData(url);
 
     if (result) {

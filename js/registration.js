@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const eventId = localStorage.getItem('event-id')
     if (eventId !== null) {
-        fetch(`http://localhost:8000/events/detail/${eventId}/`, {
+        fetch(`https://osunstartuphubapi.pythonanywhere.com/api/events/detail/${eventId}/`, {
             method: 'GET',
             headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
         })

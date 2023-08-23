@@ -1,4 +1,4 @@
-fetch('http://localhost:8000/foundry/')
+fetch('https://osunstartuphubapi.pythonanywhere.com/api/foundry/')
     .then(response => {
         // network failure, request prevented
         if (response.status >= 200 && response.status < 300) {
@@ -10,7 +10,7 @@ fetch('http://localhost:8000/foundry/')
     })
     .then(response => response.json())
     .then(result => {
-        document.getElementById("foundry-banner-image").src = `http://localhost:8000${result.banner}`
+        document.getElementById("foundry-banner-image").src = `https://osunstartuphubapi.pythonanywhere.com${result.banner}`
         document.getElementById("foundry-content-container").innerHTML = result.content
     })
     .catch(error => {
