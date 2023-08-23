@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         var data = JSON.stringify(formDataDictionary)
-        const registrationUrl = 'http://127.0.0.1:8000/events/register/';
+        const registrationUrl = 'https://osunstartuphubapi.pythonanywhere.com/api/events/register/';
         const alertContainer = document.getElementById('alert-container');
 
         fetch(registrationUrl, {
