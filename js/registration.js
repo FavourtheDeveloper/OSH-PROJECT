@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
             body: data,
         })
             .then(response => {
-                console.log(response.status);
                 if (response.status === 202) {
                     localStorage.setItem('reg-status', 'true');
                 } else if (response.status === 200) {
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const regStatus = localStorage.getItem('reg-status');
                 const alert = document.createElement('div');
                 alert.className = 'alert alert-dismissible fade show';
-                console.log(regStatus)
                 if (regStatus === 'true') {
                     alert.classList.add('alert-success');
                     alert.innerHTML = `
