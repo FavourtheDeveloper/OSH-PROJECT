@@ -394,6 +394,47 @@ footer span {
 }
 
 
+
+
+
+#teamshowcase h1 {
+  font-size: 80px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+#teammain{
+  margin-top: 60px;
+  color: black !important;
+}
+
+#teammain .col-lg-3{
+  margin-bottom: 30px;
+}
+
+#teammain .col-lg-3 h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+#teammain .col-lg-3 img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#teammain .col-lg-3 button {
+  background-color: #FF035F;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 8px 28px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
 @media only screen and (max-width: 730px) {
   #homeshowcase {
     margin: 10px auto;
