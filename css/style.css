@@ -48,7 +48,7 @@ nav .navbar-toggler-icon {
 }
 
 #homeshowcase .row h1 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bolder;
   padding-top: 20px;
 }
@@ -98,7 +98,7 @@ nav .navbar-toggler-icon {
 }
 
 #hometeam h3 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   margin-top: 60px;
 }
@@ -124,7 +124,7 @@ nav .navbar-toggler-icon {
 }
 
 #homeorg h3 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -214,8 +214,8 @@ footer span {
 }
 
 #blogcontent h1 {
-  font-size: 80px;
-  padding: 20px;
+  font-size: 40px;
+  padding: 30px;
   font-weight: bold;
 }
 
@@ -313,6 +313,7 @@ footer span {
 
 .abouttext p {
   font-size: 21px;
+  color: black !important;
 }
 
 
@@ -322,6 +323,7 @@ footer span {
 
 #aboutmain {
   margin-top: 60px;
+  color: black !important;
 }
 
 #aboutmain .aboutvision {
@@ -338,6 +340,8 @@ footer span {
 
 #aboutmain .aboutvision p {
   text-align: justify;
+  color: black !important;
+  
 }
 
 #aboutmain .col-lg-2 h5 {
@@ -397,14 +401,14 @@ footer span {
 
 
   #homeshowcase .row h1 {
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 10px;
   }
 
   #homeshowcase .row img {
     margin-left: 0px;
-    width: 400px;
-    height: 270px;
+    width: 100%;
+    height: 400px;
     margin-top: 50px;
   }
 
@@ -415,7 +419,7 @@ footer span {
   }
 
   #homeslider .carousel-inner img {
-    width: 500px !important;
+    width: 100% !important;
   }
 
   #hometeam {
@@ -429,7 +433,7 @@ footer span {
 
 
   #hometeam .row img {
-    width: 400px;
+    width: 100%;
     margin-top: 50px;
   }
 
@@ -440,7 +444,7 @@ footer span {
 
 
   #homeorg .row img {
-    width: 400px;
+    width: 100%;
     margin: 30px auto;
   }
 
@@ -477,6 +481,24 @@ footer span {
     height: 270px;
     margin-bottom: 15px;
   }
+
+  #blogshowcase h1 {
+    font-size: 80px;
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #blogposts .row .col-lg-4 .imgwrap img {
+    height: 350px;
+    width: 100%;
+  }
+
+  #blogcontent h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 393px) {
@@ -491,8 +513,6 @@ footer span {
     font-size: 18px;
     padding: 10px 20px;
   }
-
-
 
 
   #productshowcase h1 {
@@ -598,13 +618,13 @@ footer span {
 @media only screen and (max-width: 320px) {
 
   #homeshowcase .row h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   #blogshowcase h1 {
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
   }
 
   #blogposts button {
@@ -612,10 +632,29 @@ footer span {
     padding: 10px 20px;
   }
 
+  
+#hometeam h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+#homeorg h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
 
   #blogcontent h1 {
-    font-size: 40px;
-    padding: 20px;
+    font-size: 18px;
+    padding: 1px;
+    text-align: left;
+  }
+
+  .my_container {
+    width: 100% !important;
+    margin: auto;
   }
 
   #blogcontent .blogtext p {
