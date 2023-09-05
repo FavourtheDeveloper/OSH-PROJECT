@@ -42,7 +42,6 @@ function formatCarouselItem(item, isActive) {
       <img class="d-block w-100 h-10" src="https://osunstartuphubapi.pythonanywhere.com${item.file}" alt="OSSH Carousel Image">
       <div class="carousel-caption d-md-block">
         <h5>${item.text}</h5>
-        <button>Join Now</button>
       </div>
     </div>`;
 }
