@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Osun Startup Hub | Blog</title>
+</head>
+
+<body>
+    <nav id="navbar-container" class="navbar navbar-expand-lg my_container"></nav>
+    <div class="container mt-5">
+        <h1>Osun Hackathon Competition Registration</h1>
+        <form method="post" id="registration-form">
+
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date_of_birth">Date of Birth</label>
+                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nationality">Nationality</label>
+                <input type="text" class="form-control" id="nationality" name="nationality" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input type="text" class="form-control" id="phone_number" name="phone_number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email_address">Email Address</label>
+                <input type="email" class="form-control" id="email_address" name="email_address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <!-- Team Information (if applicable) -->
+            <div class="form-group">
+                <label for="team_name">Team Name</label>
+                <input type="text" class="form-control" id="team_name" name="team_name">
+            </div>
+
+            <div class="form-group">
+                <label for="team_leader">Team Leader</label>
+                <input type="text" class="form-control" id="team_leader" name="team_leader">
+            </div>
+
+            <div class="form-group">
+                <label for="team_members">Team Members (List names and roles)</label>
+                <textarea class="form-control" id="team_members" name="team_members" rows="3"></textarea>
+            </div>
+
+            <!-- Competition Details -->
+            <div class="form-group">
+                <label for="registration_type">Registration Type</label>
+                <select class="form-control" id="registration_type" name="registration_type" required>
+                    <option value="Individual">Individual</option>
+                    <option value="Team">Team</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="participated_before">Have you participated in a hackathon before?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="participated_before" id="yes" value="True"
+                        required>
+                    <label class="form-check-label" for="yes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="participated_before" id="no" value="False"
+                        required>
+                    <label class="form-check-label" for="no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="previous_experience">Details of previous hackathon experience</label>
+                <textarea class="form-control" id="previous_experience" name="previous_experience" rows="3"></textarea>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="form-group">
+                <label for="programming_languages">Programming Languages (e.g., Python, Java, C++)</label>
+                <input type="text" class="form-control" id="programming_languages" name="programming_languages">
+            </div>
+
+            <div class="form-group">
+                <label for="development_tools">Development Tools (e.g., IDEs, frameworks)</label>
+                <input type="text" class="form-control" id="development_tools" name="development_tools">
+            </div>
+
+            <div class="form-group">
+                <label for="other_skills">Other Relevant Skills (e.g., data analysis, design, hardware)</label>
+                <input type="text" class="form-control" id="other_skills" name="other_skills">
+            </div>
+
+            <!-- Project Idea (if known) -->
+            <div class="form-group">
+                <label for="project_idea">Briefly describe your hackathon project idea</label>
+                <textarea class="form-control" id="project_idea" name="project_idea" rows="3"></textarea>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms_and_conditions" name="agreed_to_terms"
+                    required>
+                <label class="form-check-label" for="terms_and_conditions">
+                    I have read and agree to the competition rules and regulations.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-block btn-warning shadow-lg mt-3">Register</button>
+        </form>
+    </div>
+    <div id="processing-message" class="text-center" style="display: none;">
+        Form is being processed...
+    </div>
+    <section id="getintouch"></section>
+    <footer id="footer-container"></footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Get the form element by its ID
+        const form = document.getElementById('registration-form');
+        const processingMessage = document.getElementById('processing-message');
+
+
+        // Add a submit event listener to the form
+        form.addEventListener('submit', function (event) {
+            console.log(event)
+            event.preventDefault(); // Prevent the default form submission
+
+            form.style.display = 'none';
+            processingMessage.style.display = 'block';
+
+            // Serialize form data into a JSON object
+            const formData = new FormData(form);
+            const formDataJSON = {};
+            formData.forEach((value, key) => {
+                formDataJSON[key] = value;
+            });
+
+            // Send a POST request to your Django API endpoint
+            fetch('https://osunstartuphubapi.pythonanywhere.com/api/hackathon/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken') // Include CSRF token
+                },
+                body: JSON.stringify(formDataJSON)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    console.log(response)
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.used_email) {
+                        alert('Error: Email Already Registered');
+                    }
+                    else {
+                        // Handle success response
+                        form.reset()
+                        // Optionally, display a success message to the user
+                        alert('Success: Registration Successful');
+
+                    }
+
+                })
+                .catch(error => {
+                    // Optionally, display an error message to the user
+                    alert('Registration failed. Please try again.');
+                })
+                .finally(() => {
+                    // Hide the processing message and show the form when the request is complete (success or error)
+                    form.style.display = 'block';
+                    processingMessage.style.display = 'none';
+                });
+        });
+
+        // Function to get the CSRF token from cookies
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+    </script>
+</body>
+
+</html>
