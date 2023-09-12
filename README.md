@@ -13,4 +13,4 @@ This repository contains a template for building web applications that interact 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/Duade10/ossh-frontend-api-integrated.git
+   git clone https://github.com/FavourtheDeveloper/OSH-PROJECT.git
