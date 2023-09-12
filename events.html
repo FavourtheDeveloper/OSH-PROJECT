@@ -13,32 +13,98 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Osun Startup Hub | Blog</title>
+    <title>Osun Startup Hub | Events</title>
+
+    <style>
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .card-link {
+            text-decoration: none;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Change the transparency as needed */
+            opacity: 0.7;
+            /* Adjust the opacity as needed */
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: #ffffff;
+            /* Set the text color to white or any other light color */
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-text small {
+            color: #f0f0f0;
+        }
+    </style>
+    <title>Osun Startup Hub | Events</title>
 </head>
 
 <body>
     <nav id="navbar-container" class="navbar navbar-expand-lg my_container"></nav>
-
-
     <section id="blogshowcase">
         <div class="my_container">
             <div class="row">
                 <div class="col-lg-4">
-                    <h1>BLOG</h1>
+                    <h1>Events</h1>
+                </div>
+                <div class="col-lg-4">
                 </div>
                 <div class="col-lg-4" data-aos="fade-left">
-                    <img src="images/blogicon.png" alt="OSH Blog Icon" class="img-fluid img-responsive">
+                    <img src="images/eventsison.png" alt="OSH Event Icon" class="img-fluid img-responsive">
                 </div>
             </div>
         </div>
     </section>
+    <main class="container py-5">
+        <div class="row" id="event-card-container">
 
-    <section id="blogposts">
-        <div class="my_container">
-            <div class="row" id="blogposts-container">
-            </div>
         </div>
-    </section>
+    </main>
+
 
     <section id="getintouch"></section>
     <footer id="footer-container"></footer>
@@ -59,8 +125,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/blog.js"></script>
 
+    <script src="js/events.js"></script>
 </body>
 
 </html>

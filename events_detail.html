@@ -13,35 +13,56 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Osun Startup Hub | Start Up Foundry</title>
+    <title>Osun Startup Hub | Events</title>
+    <style>
+        .btn {
+            background-color: #FF035F;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            padding: 12px 28px;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+
+        .btn:hover {
+            color: white;
+        }
+    </style>
+    <title>Osun Startup Hub | Events</title>
 </head>
 
 <body>
     <nav id="navbar-container" class="navbar navbar-expand-lg my_container"></nav>
 
-
-    <section id="startupshowcase">
-        <div class="my_container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1>STARTUP FOUNDRY</h1>
-                </div>
-
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img id="foundry-banner-image" src="" alt="OSSH Startup Foundry" class="img-fluid img-responsive">
-                </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="event-title"></h1>
+                <!-- Event Image -->
+                <img src="" id="event-image" class="img-fluid rounded" alt="Event Image">
+                <!-- Event Details -->
+                <h3>Event Details</h3>
+                <ul class="list-unstyled">
+                    <li id="event-time"></li>
+                    <li id="event-location"></li>
+                </ul>
+                <!-- Event Description -->
+                <h3>Description</h3>
+                <p id="event-description"></p>
+                <a href="registration.html" class="btn">Register Now</a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="startupmain">
-        <div class="container" id="foundry-content-container">
-            Loading..
-        </div>
-    </section>
 
     <section id="getintouch"></section>
     <footer id="footer-container"></footer>
+
 
 
     <!-- Optional JavaScript -->
@@ -58,7 +79,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/startup.js"></script>
+    <script src="js/events_detail.js"></script>
 </body>
 
 </html>
